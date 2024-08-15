@@ -25,12 +25,12 @@ connection.once('open', () => {
 
 const exercisesRouter = require('./routes/exercises');
 const usersRouter = require('./routes/users');
-const requestsRouter = require('./routes/requests');
+// const requestsRouter = require('./routes/requests');
 const attendanceRouter = require('./routes/attendance');
 
 app.use('/attendance', attendanceRouter);
 
-app.use('/requests', requestsRouter);
+// app.use('/requests', requestsRouter);
 
 app.use('/exercises', exercisesRouter);
 app.use('/users', usersRouter);
